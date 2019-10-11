@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
-
-
-	<style>
-		#openlens {
+    <title></title>
+    <style>
+    #openlens {
         width: 400px;
         height: 400px;
-/*        background-color: green;
-*/        background-image: url("boy.png");
+        /*        background-color: green;
+*/
+        background-image: url("boy.png");
         background-size: contain;
-        background-repeat:no-repeat;
+        background-repeat: no-repeat;
 
     }
 
     #openlens:hover {
-        background-image: url("boy-camera.png");
 
-
+        animation-name: changePic;
+        animation-duration:5s;
+        animation-iteration-count: 1;
+        animation-timing-function: steps(1, end);        /*background-image: url("boy-camera.png");
+        */
     }
 
-    
+    @keyframes changePic {
 
-    #demo: onclick {
+        0% {
+            background-image:url("boy.png");
 
-    background-image: url("boy-camera-postcard.png");
 
-		}
-	</style>
+        }
+
+        33% {
+            background-image: url("boy-camera.png");
+        }
+
+        66% {
+            background-image: url("boy-camera-postcard.png");
+        }
+
+        100% {
+            background-image: url(boy.png);
+        }
+
+    }
+    </style>
 </head>
+
 <body>
- A TRAVELING LENS
+    A TRAVELING LENS
     <div id="openlens">
     </div>
-<onclick="myFunction()">
-<p id="demo"></p>
-
+    <onclick="myFunction()">
+        <p id="demo"></p>
 </body>
 
 </html>
