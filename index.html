@@ -1,32 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
 
-	<style>
-		#openlens {
-        width: 400px;
+<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+
+
+<head>
+    <title></title>
+    <style>
+    #openlens {
+
+
+        width: 600px;
         height: 400px;
 /*        background-color: green;
-*/        background-image: url("lens1.png");
-        background-size: contain;
-        background-repeat:no-repeat;
+*/        background-image: url("camera-front.png"
+	);
+        background-size: cover;
+        background-repeat: no-repeat;
+        top:250px;
+        left:460px;
 
     }
 
     #openlens:hover {
-        background-image: url("lens2.png");
+        background-image: url("camera-screen.png");
 
 
     }
-		}
-	</style>
-</head>
-<body>
- A TRAVELING LENS
-    <div id="openlens">
-    </div>
 
+    #openlens2 {
+    	background-image: url ("lens1");
+    	width:20px;
+    	height:20px;
+    }
+
+    body{
+    	font-family: 'Mansalva', cursive;
+
+    	background-color:lightblue;
+    }
+
+    /*#openlens:onclick */
+
+    .button{
+    	width:50px;
+    	height:50px;
+/*    	background-color:purple;
+*/    	opacity:0;
+    	position:relative;
+    	top:270px;
+    	left:480px;
+    	border:lightblue dotted 1px;
+    }
+    .button-2{
+    	width:50px;
+    	height:50px;
+/*    	background-color:purple;
+*/    	opacity:1;
+    	position:relative;
+    	top:280px;
+    	left:450px;
+    	border:lightblue dotted 1px;
+    }
+    </style> 
+</head>
+
+<body>
+    A TRAVELINGf LENS
+    <div id="openlens">
+    	<div id="open lens 2">
+
+    	<a href="lens.html"><div class="button" id="one"></div></a>
+    </div>
+    <a href="index.html #2"><div class="button-2" id="one"></div></a>
+    </div>
 
 </body>
 
