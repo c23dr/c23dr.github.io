@@ -1,0 +1,69 @@
+  <!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+
+<head>
+    <title></title>
+    <style>
+         body{
+        font-family: 'Mansalva', cursive;
+    }
+    #openlens {
+        width: 400px;
+        height: 400px;
+        /*        background-color: green;
+*/
+        background-image: url("boy.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    #openlens:hover {
+
+        animation-name: changePic;
+        animation-duration:8s;
+        animation-iteration-count: 1;
+        animation-timing-function: steps(1, end);        /*background-image: url("boy-camera.png");
+        */
+    }
+
+    @keyframes changePic {
+
+        0% {
+            background-image:url("boy.png");
+
+
+        }
+
+        20% {
+            background-image: url("boy-camera.png");
+        }
+
+        40% {
+            background-image: url("boy-camera-postcard.png");
+        }
+
+        60% {
+            background-image: url(window.png);
+        }
+        80% {
+            background-image: url(window-newspaper.png)
+        }
+        100% {
+            background-image: url(boy.png)
+        }
+
+    }
+    </style>
+</head>
+
+<body>
+    Perspective
+    <div id="openlens">
+    </div>
+    <onclick="myFunction()">
+        <p id="demo"></p>
+</body>
+
+</html>

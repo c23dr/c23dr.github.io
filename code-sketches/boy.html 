@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+    #openlens {
+        width: 400px;
+        height: 400px;
+        /*        background-color: green;
+*/
+        background-image: url("boy.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    #openlens:hover {
+        background-image: url("boy-camera.png");
+
+
+    }
+    </style>
+</head>
+
+<body>
+    A TRAVELING LENS
+    <div id="openlens">
+    </div>
+    <onclick="myFunction()">
+        <p id="demo"></p>
+</body>
+
+</html>
