@@ -300,7 +300,7 @@
 <div id="subways">
 	<div id="full" class="myButton-full">Full map</div>
 	<div id="red" class="myButton">1, 2, 3</div>
-	<div id="red-2" class="myButton123">photos</div>
+	<div id="reds" class="myButton123">photos</div>
 
 
 
@@ -331,7 +331,7 @@
 
     	 <script type="text/javascript">
 var full= document.getElementById ('full');    	
-var red2= document.getElementById ('red2');    	
+var reds= document.getElementById ('reds');    	
 var red = document.getElementById('red');
 var blue2= document.getElementById ('blue2');
 var blue = document.getElementById('blue');
@@ -364,12 +364,12 @@ red.addEventListener("click", function(
 
 });
 
-// red2.addEventListener("click", function(
-// ){
-// 	maps.style.backgroundImage="url(stations.html)";
-// 		maps.style.backgroundPosition="0% 10%";
+reds.addEventListener("click", function(
+){
+	maps.style.backgroundImage="url(stations.html)";
+		maps.style.backgroundPosition="0% 10%";
 
-// });
+});
 
 blue.addEventListener("click", function(
 ){
