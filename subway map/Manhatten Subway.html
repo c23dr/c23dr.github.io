@@ -10,7 +10,7 @@
     
 
 		#maps {
-  background-image: url("subway map/full map.png");
+  background-image: url("full-map.png");
   background-size: cover;
   background-size:center;
   background-repeat: no-repeat;
@@ -32,6 +32,7 @@
 	padding:6px 15px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #b23e35;
+	z-index: 10;
 }
 .myButton123 {
 	box-shadow:inset 0px 39px 0px -24px #EE352E;
@@ -298,7 +299,13 @@
 <div id="subways">
 	<div id="red" class="myButton">1, 2, 3</div>
 	<div id="red-2" class="myButton123">photos</div>
+
+
+
 	<div id="blue" class="myButton-2">A, C, E</div>
+
+
+
 	<div id="blue-2" class="myButtonACE">photos</div>
 	<div id="green" class="myButton-3">4, 5, 6</div>
 	<div id="green-2" class="myButton456">photos</div>
@@ -321,9 +328,9 @@
 	
 
     	 <script type="text/javascript">
-var red2= document.getElementById ('red2')    	
+var red2= document.getElementById ('red2');    	
 var red = document.getElementById('red');
-var blue2= document.getElementById ('blue2')
+var blue2= document.getElementById ('blue2');
 var blue = document.getElementById('blue');
 var green2 = document.getElementById('green-2');
 var green = document.getElementById('green');
@@ -345,26 +352,28 @@ red.addEventListener("click", function(
 	maps.style.backgroundImage="url(red.png)";
 		maps.style.backgroundPosition="0% 10%";
 
-})
-red2.addEventListener("click", function(
-){
-	maps.style.backgroundImage="url(stations.html)";
-		maps.style.backgroundPosition="0% 10%";
+});
 
-})
+// red2.addEventListener("click", function(
+// ){
+// 	maps.style.backgroundImage="url(stations.html)";
+// 		maps.style.backgroundPosition="0% 10%";
+
+// });
+
 blue.addEventListener("click", function(
 ){
 	maps.style.backgroundImage="url(blue.png)";
 
- })
+ });
 
 
-blue2.addEventListener("click", function(
-){
-	maps.style.backgroundImage="url(stations.html)";
-		maps.style.backgroundPosition="0% 10%";
+ // blue2.addEventListener("click", function(){
+ // 	console.log("hi");
+ // 	maps.style.backgroundImage="url(stations.html)";
+ // 		maps.style.backgroundPosition="0% 10%";
 
-})
+ // })
 
 green.addEventListener("click", function(
 ){
@@ -372,85 +381,85 @@ green.addEventListener("click", function(
 		maps.style.backgroundPosition="0% 10%";
 
 })
-green2.addEventListener("click", function(
-){
-	maps.style.backgroundImage="url(stations.html)";
-		maps.style.backgroundPosition="0% 10%";
+// green2.addEventListener("click", function(
+// ){
+// 	maps.style.backgroundImage="url(stations.html)";
+// 		maps.style.backgroundPosition="0% 10%";
 
-})
+// })
 orange.addEventListener("click", function(
 ){
 	maps.style.backgroundImage="url(orange.png)";
 		maps.style.backgroundPosition="0% 10%";
 
 })
-orange2.addEventListener("click", function(
-){
-	maps.style.backgroundImage="url(stations.html)";
-		maps.style.backgroundPosition="0% 10%";
+// orange2.addEventListener("click", function(
+// ){
+// 	maps.style.backgroundImage="url(stations.html)";
+// 		maps.style.backgroundPosition="0% 10%";
 
-})
+// })
 yellow.addEventListener("click", function(
 ){
 	maps.style.backgroundImage="url(yellow.png)";
 		maps.style.backgroundPosition="0% 10%";
 
 })
-yellow2.addEventListener("click", function(
-){
-	maps.style.backgroundImage="url(stations.html)";
-		maps.style.backgroundPosition="0% 10%";
+// yellow2.addEventListener("click", function(
+// ){
+// 	maps.style.backgroundImage="url(stations.html)";
+// 		maps.style.backgroundPosition="0% 10%";
 
-})
+// })
 brown.addEventListener("click", function(
 ){
 	maps.style.backgroundImage="url(brown.png)";
 		maps.style.backgroundPosition="0% 10%";
 
 })
-brown2.addEventListener("click", function(
-){
-	maps.style.backgroundImage="url(stations.html)";
-		maps.style.backgroundPosition="0% 10%";
+// brown2.addEventListener("click", function(
+// ){
+// 	maps.style.backgroundImage="url(stations.html)";
+// 		maps.style.backgroundPosition="0% 10%";
 
-})
+// })
 purple.addEventListener("click", function(
 ){
 	maps.style.backgroundImage="url(purple.png)";
 		maps.style.backgroundPosition="0% 10%";
 
 })
-purple2.addEventListener("click", function(
-){
-	maps.style.backgroundImage="url(stations.html)";
-		maps.style.backgroundPosition="0% 10%";
+// purple2.addEventListener("click", function(
+// ){
+// 	maps.style.backgroundImage="url(stations.html)";
+// 		maps.style.backgroundPosition="0% 10%";
 
-})
+// })
 lightgrey.addEventListener("click", function(
 ){
 	maps.style.backgroundImage="url(light-grey.png)";
 		maps.style.backgroundPosition="0% 10%";
 
 })
-lightgrey2.addEventListener("click", function(
-){
-	maps.style.backgroundImage="url(stations.html)";
-		maps.style.backgroundPosition="0% 10%";
+// lightgrey2.addEventListener("click", function(
+// ){
+// 	maps.style.backgroundImage="url(stations.html)";
+// 		maps.style.backgroundPosition="0% 10%";
 
-})
+// })
  grey.addEventListener("click", function(
 ){
 	maps.style.backgroundImage="url(grey.png)";
 		maps.style.backgroundPosition="0% 10%";
 
 })
- grey2.addEventListener("click", function(
-){
-	maps.style.backgroundImage="url(stations.html)";
-		maps.style.backgroundPosition="0% 10%";
+//  grey2.addEventListener("click", function(
+// ){
+// 	maps.style.backgroundImage="url(stations.html)";
+// 		maps.style.backgroundPosition="0% 10%";
 
-})
+// })
 
     </script>
-</body>
+</body><
 </html>
