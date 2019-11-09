@@ -261,9 +261,9 @@
     top: 300px
     left: 150px;
 }
-.myButtonS {
-	box-shadow:inset 0px 39px 0px -24px #808183;
-	background-color:#808183;
+.myButton-full {
+	box-shadow:inset 0px 39px 0px -24px #000000;
+	background-color:#000000;
 	border-radius:4px;
 	border:1px solid #;
 	display:inline-block;
@@ -278,6 +278,7 @@
     top: 300px
     left: 150px;
 }
+
 #subways{
 	position:fixed;
 	top:0%;
@@ -297,6 +298,7 @@
 	
 
 <div id="subways">
+	<div id="full" class="myButton-full">Full map</div>
 	<div id="red" class="myButton">1, 2, 3</div>
 	<div id="red-2" class="myButton123">photos</div>
 
@@ -328,6 +330,7 @@
 	
 
     	 <script type="text/javascript">
+var full= document.getElementById ('full');    	
 var red2= document.getElementById ('red2');    	
 var red = document.getElementById('red');
 var blue2= document.getElementById ('blue2');
@@ -347,6 +350,13 @@ var lightgrey = document.getElementById('lightgrey');
 var grey2 = document.getElementById('darkgrey-2');
 var grey = document.getElementById('darkgrey');
 var maps = document.getElementById('maps');
+
+full.addEventListener("click", function(
+){
+	maps.style.backgroundImage="url(full-map.png)";
+	maps.style.backgroundPosition="0% 10%";
+
+});
 red.addEventListener("click", function(
 ){
 	maps.style.backgroundImage="url(red.png)";
