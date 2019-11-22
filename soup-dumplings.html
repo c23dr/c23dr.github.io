@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>onClick Demo</title>
+</head>
+<body>
+<script>
+function toggleImage() {
+   var img1 = "https://i7.pngguru.com/preview/432/33/248/baozi-xiaolongbao-shengjian-mantou-breakfast-bun-thumbnail.jpg";
+   var img2 = "https://clipground.com/images/chinese-food-box-clip-art-13.png";
+   
+   var imgElement = document.getElementById('toggleImage');
+
+   imgElement.src = (imgElement.src === img1)? img2 : img1;
+}
+</script>
+<img src="https://i7.pngguru.com/preview/432/33/248/baozi-xiaolongbao-shengjian-mantou-breakfast-bun-thumbnail.jpg" id="toggleImage" onclick="toggleImage();"/>
+
+</body>
+</html>
