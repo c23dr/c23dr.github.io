@@ -287,20 +287,27 @@
 #maps{
 	width:800px;
 	height:1000px;
-	border:black solid 2px;
-
+	background-position:center;
+	left:20%;
+	position:relative;
+	z-index: -1;
+/*	border:black solid 2px;
+*/
 }
 	
 	</style>
 </head>
 <body id="body">
+
+\
+	
 	
 	
 
 <div id="subways">
 	<div id="full" class="myButton-full">Full map</div>
 	<div id="red" class="myButton">1, 2, 3</div>
-	<div id="reds" class="myButton123">photos</div>
+<a href="./subway/96-subway.html"><div id="reds" class="myButton123">photos</div></a>
 
 
 
@@ -330,8 +337,7 @@
 	
 
     	 <script type="text/javascript">
-var full= document.getElementById ('full');    	
-var reds= document.getElementById ('reds');    	
+var full= document.getElementById ('full');    	    	
 var red = document.getElementById('red');
 var blue2= document.getElementById ('blue2');
 var blue = document.getElementById('blue');
@@ -364,12 +370,6 @@ red.addEventListener("click", function(
 
 });
 
-reds.addEventListener("click", function(
-){
-	maps.style.backgroundImage = "href(stations.html)";
-		maps.style.backgroundPosition="0% 10%";
-
-});
 
 blue.addEventListener("click", function(
 ){
