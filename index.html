@@ -7,26 +7,7 @@
 <head>
     <title></title>
     <style>
-    #openlens {
 
-
-        width: 600px;
-        height: 400px;
-/*        background-color: green;
-*/        background-image: url("camera-front.png"
-	);
-        background-size: cover;
-
-        top:250px;
-        left:460px;
-
-    }
-
-    #openlens:hover {
-        background-image: url("camera-screen.png");
-
-
-    }
 
     body{
     	font-family: 'Mansalva', cursive;
@@ -34,7 +15,22 @@
     	background-color:lightblue;
     }
 
-    /*#openlens:onclick */
+ #camera1{
+width: 500px;
+height: 300px;
+top: 33px;
+left: -4px;
+position: fixed;
+}
+
+    #camera2{
+width: 500px;
+height: 300px;
+top: 33px;
+left: 480px;
+position: fixed;
+}
+
 
     #button{
     	width:125px;
@@ -43,21 +39,36 @@
         z-index: 5;
      	opacity:0;
     	position:fixed;
-    	top:260px;
-    	left:234px;
-    	
-    
-    
+    	top:203px;
+    	left:180px;
+}
+#button2{
+        width:125px;
+        height:38px;
+        background-color: purple;
+        z-index: 5;
+        opacity:0;
+        position:fixed;
+        top:203px;
+        left:675px;
+}
+
+
 
     </style> 
 </head>
 
 <body>
     A TRAVELING LENS
-    <div id="openlens">
-    	<div id="open lens 2">
-
+            <div id="camera1">
+            <div id="camera2">
+           
     	<a href="./code-sketches/code-sketches.html"><div id="button" ></div></a>
+        <a href="./journal/journal.html"><div id="button2" ></div></a>
+        <script type="text/javascript"></script>
+        <img src='./code-sketches/camera-front.png' onmouseover="this.src='./code-sketches/camera-screen.png';" onmouseout="this.src='./code-sketches/camera-front.png';" id="camera1";>
+        <img src='./code-sketches/camera-front.png' onmouseover="this.src='./code-sketches/camera-screen-3.png';" onmouseout="this.src='./code-sketches/camera-front.png';"id="camera2" >
+
     </div>
    
 </body>
