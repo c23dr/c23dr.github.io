@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <style>
+    	#banana13{
+    		height:400px;
+    		width:500px;
+    	}
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+    //how do I create a recipe?//
+
+    var string = "string";
+    var number = 5;
+    var boolean = true
+
+
+
+    function makeBanana(x) {
+
+        var banana = document.createElement("div");
+        document.body.appendChild(banana);
+        banana.style.width = "100px";
+        banana.style.height = "80px";
+        banana.style.backgroundSize = "contain";
+        banana.style.position = "relative";
+        banana.style.display = "inline-block";
+        banana.id = "banana"+x;
+        banana.innerText = banana.id;
+
+
+
+        banana.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTtCV03nD1a0Lt7odwl97wBTTrHbAlOYyEl4hPuBZaFw3P7PFBb)";
+        banana.style.backgroundColor = "pink";
+    };
+    
+    for (var i=0; i<24343; i=i+1) {
+    	makeBanana(i);
+    }
+
+    // var banana13 = document.getElementById("banana13");
+    // banana13.style.width="500px";
+    //     banana13.style.height="400px";
+
+    // setInterval(makeBanana, 50);
+
+
+
+
+
+
+    // if (number == 5) {
+    // 	makeBanana
+    // }
+    </script>
+</body>
+
+</html>

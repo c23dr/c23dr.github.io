@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style>
+		
+
+		#ribbon{
+			width:300px;
+			height:300px;
+            background-color: red;
+			color:white;
+			font-size:80px;
+            z-index: 1;
+    
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+
+	<div id="ribbon"></div>
+<script type="text/javascript">
+
+        var ribbon= [
+  { name: 'blue', image: 'blueribbon.png' }, 
+  { name: 'red', image: 'ribbon2.png' }, 
+  { name: 'purple', image: 'purpleribbon.png' }
+];
+
+  for (var i = 0; i < boldStuffs.length; i += 1) {
+    var ribbon = getRandomItem(ribbonArray);
+    boldStuffs[i].innerHTML = ribbon.name + '<img src="'+ribbon.image+'">';
+}
+
+
+</body>
+</html>
