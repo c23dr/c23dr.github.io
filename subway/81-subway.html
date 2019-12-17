@@ -3,6 +3,10 @@
 <head>
 	<title></title>
 	<style>
+		
+#openlens
+
+
 		body{
     	font-family: 'Mansalva', cursive;
 
@@ -10,16 +14,32 @@
     	background-repeat: no-repeat;
     	background-size: cover;
 
+       
 	</style>
 </head>
 <body>
-	<audio controls>
-		<source src="metro-sound.m4a"type="audio/mpeg">
-			</audio>
+	<div id="present">
+ <audio id="song" src="metro-sound.m4a" type="audio/mpeg">
+ 	</div>			
 
-<IMG STYLE="position:absolute; TOP:35px; LEFT:388px; WIDTH:500px; HEIGHT:300px" SRC="81-comsci.png">
+<IMG STYLE="position:absolute; TOP:35px; LEFT:388px; WIDTH:500px; HEIGHT:300px" SRC="81-comsci.png"id="open lens">
  <IMG STYLE="position:absolute; TOP:348px; LEFT:95px; WIDTH:284px; HEIGHT:178px" SRC="81-1.png">
  <IMG STYLE="position:absolute; TOP:348px; LEFT:485px; WIDTH:337px; HEIGHT:178px" SRC="81-2.png">
  <IMG STYLE="position:absolute; TOP:348px; LEFT:910px; WIDTH:284px; HEIGHT:178px" SRC="81-3.png">
+<script type="text/javascript">
+
+
+var song=document.getElementById("song");
+
+var present=document.getElementById("present");
+document.addEventListener("click", 
+	function() {
+		var randomNumber = Math.round(Math.random()*4)
+
+song.play();
+		present.innerText=p[randomNumber];
+		console.log(randomNumber)
+});
+ </script>
 </body>
 </html>
