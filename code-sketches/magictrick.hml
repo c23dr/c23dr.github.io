@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		.starlings{
+			width:100px;
+			height:150px;
+			background-image:url(starling.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+			display:inline-block;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<div class="starlings"></div>
+
+	<script>
+	
+	function makeStarling () {
+		var starling = document.createElement("div");
+		document.body.appendChild(starling);
+		starling.classList.add("starlings");
+
+	}
+
+
+
+
+	for(var i=0; i<100; i=i+1){
+		makeStarling();
+	}
+</script>
+
+</body>
+</html>

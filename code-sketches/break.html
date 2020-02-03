@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#openlens {
+        
+        top:400px;
+        left: 900px;
+        background-repeat: no-repeat;
+        background-position: fixed;
+
+        animation-name: changePic;
+        animation-duration:12s;
+        animation-iteration-count: 1;
+        animation-timing-function: steps(1, end);        
+        
+    }
+
+		 @keyframes changePic {
+
+        0% {
+            background-image:url("2020-2.png"); 
+        }
+
+        50% {
+            background-image: url("2020-3.png"); 
+        }
+
+        100% {
+            background-image: url("2020-3.png");
+        }
+
+    }
+	</style>
+</head>
+<body>
+	<div id="openlens" style="  background-position: fixed; top: 400px; left: 900px; width: 10000px; height: 350px;">
+    </div>
+ <onclick="myFunction()">
+ <IMG STYLE="position:absolute; TOP:190px; LEFT:124px; WIDTH:215px; HEIGHT:225px" SRC="boy2.png">
+ <IMG STYLE="position:absolute; TOP:162px; LEFT:408px; WIDTH:350px; HEIGHT:251px" SRC="boy3.png">
+ <IMG STYLE="position:absolute; TOP:167px; LEFT:720px; WIDTH:244px; HEIGHT:225px" SRC="boy4.png">
+</body>
+</html>
