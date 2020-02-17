@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+    #linkTarget{
+      top:300px;
+    }
+		
+		hr {
+    border-top: 80px solid #808080;
+     border-top:1px dotted #f00;
+  color:#fff;
+  background-color:#fff;
+  height:500px;
+  width:50%;
+}
+body{
+  font-family: 'Futura', Sans-Serif;
+  font-size: 30px;
+  background-color: dimgray
+}
+   .card {
+        width: 600px;
+        height: 600px;
+        background: url("cookbook.png") no-repeat;
+     
+        background-position: center;
+    }
+    .card:hover {
+        background: url("book2.gif") no-repeat;
+    }
+
+
+</style>
+
+</head>
+<body>
+ <div id="linkTarget"></div>
+
+
+<div class="card"></div>
+  <script type="text/javascript">
+function random_30(){
+    var myrandom=Math.round(Math.random()*30)
+    var link1="https://cooking.nytimes.com/recipes/1020851-bittersweet-brownie-shortbread?algo=cooking_doc2vec_weight_1&fellback=false&imp_id=234340943&action=click&module=RecirculationRibbon&pgType=recipedetails&rank=1"
+    var link2="https://cooking.nytimes.com/recipes/1018443-cranberry-tart?action=click&module=Collection%20Page%20Recipe%20Card&region=Centerpiece%20Desserts&pgType=collection&rank=15"
+    var link3="https://cooking.nytimes.com/recipes/1019446-lemon-blueberry-bars?algo=cooking_doc2vec_weight_1&fellback=false&imp_id=736649929&action=click&module=RecirculationRibbon&pgType=recipedetails&rank=12"
+    var link4="https://cooking.nytimes.com/recipes/1020590-cranberry-crumb-cake?algo=cooking_doc2vec_weight_1&fellback=false&imp_id=745445990&action=click&module=RecirculationRibbon&pgType=recipedetails&rank=12"
+    var link5="https://cooking.nytimes.com/recipes/2868-jordan-marshs-blueberry-muffins?algo=cooking_doc2vec_weight_1&fellback=false&imp_id=955860489&action=click&module=RecirculationRibbon&pgType=recipedetails&rank=10"
+    var link6="https://cooking.nytimes.com/recipes/1019333-millionaires-shortbread?action=click&module=Collection%20Band%20Recipe%20Card&region=Valentine%E2%80%99s%20Day%20Cookie%20and%20Dessert%20Recipes&pgType=supercollection&rank=7"
+    var link7="https://cooking.nytimes.com/recipes/1014673-chocolate-crusted-banana-blondies?algo=cooking_doc2vec_weight_1&fellback=false&imp_id=566367413&action=click&module=RecirculationRibbon&pgType=recipedetails&rank=4"
+    var link8="https://cooking.nytimes.com/recipes/1019152-salted-chocolate-chunk-shortbread-cookies?algo=cooking_doc2vec_weight_1&fellback=false&imp_id=10267979&action=click&module=RecirculationRibbon&pgType=recipedetails&rank=3"
+    var link9="https://cooking.nytimes.com/recipes/1012927-apple-cider-doughnuts?action=click&module=Collection%20Page%20Recipe%20Card&region=Fall%20Fruit%20Desserts&pgType=collection&rank=3"
+    var link10="https://cooking.nytimes.com/recipes/1019806-chocolate-molasses-cookies?action=click&module=Collection%20Page%20Recipe%20Card&region=Our%20100%20Best%20Chocolate%20Recipes&pgType=collection&rank=82"
+    var link11="https://cooking.nytimes.com/recipes/5346-lemon-poundcake?action=click&module=Global%20Search%20Recipe%20Card&pgType=search&rank=8"
+    var link12="https://cooking.nytimes.com/recipes/1019260-lemon-meltaways?action=click&module=Global%20Search%20Recipe%20Card&pgType=search&rank=9"
+    var link13="https://cooking.nytimes.com/recipes/6245-king-arthur-flours-banana-crumb-muffins?action=click&module=Global%20Search%20Recipe%20Card&pgType=search&rank=37"
+    var link14="https://cooking.nytimes.com/recipes/8927-sour-cream-coffee-cake?algo=cooking_doc2vec_weight_1&fellback=false&imp_id=928591590&action=click&module=RecirculationRibbon&pgType=recipedetails&rank=4"
+    var link15="https://cooking.nytimes.com/recipes/1020850-cocoa-nib-sables-with-flaky-sea-salt?algo=cooking_doc2vec_weight_1&fellback=false&imp_id=566543231&action=click&module=RecirculationRibbon&pgType=recipedetails&rank=9"
+    var link16="https://cooking.nytimes.com/recipes/1019986-olive-oil-cake?module=Recipe+of+The+Day&pgType=homepage&action=click"
+    var link17="https://cooking.nytimes.com/recipes/1019046-lemon-ginger-tart?action=click&module=Collection%20Page%20Recipe%20Card&region=Sam%20Sifton%E2%80%99s%20Suggestions&pgType=collection&rank=12"
+    var link18="https://cooking.nytimes.com/recipes/1019974-mango-pie?action=click&module=Collection%20Page%20Recipe%20Card&region=Sam%20Sifton%E2%80%99s%20Suggestions&pgType=collection&rank=78"
+    var link19="https://cooking.nytimes.com/recipes/1017786-edna-lewiss-biscuits?action=click&module=Collection%20Page%20Recipe%20Card&region=Muffins%2C%20Scones%20and%20Biscuits%2C%20Oh%20My!&pgType=collection&rank=27"
+    var link20="https://cooking.nytimes.com/recipes/1019977-whipped-cream-scones-with-chocolate-and-cherries?action=click&module=Collection%20Page%20Recipe%20Card&region=Muffins%2C%20Scones%20and%20Biscuits%2C%20Oh%20My!&pgType=collection&rank=32"
+    var link21="https://cooking.nytimes.com/recipes/1017034-chewy-chocolate-snowcaps?algo=cooking_doc2vec_weight_1&fellback=false&imp_id=697482890&action=click&module=RecirculationRibbon&pgType=recipedetails&rank=7"
+    var link22="https://cooking.nytimes.com/recipes/1014032-st-louis-gooey-butter-cake?action=click&module=Collection%20Page%20Recipe%20Card&region=22%20Delicious%20Reasons%20to%20Eat%20Cake%20for%20Breakfast&pgType=collection&rank=2"
+    var link23="https://cooking.nytimes.com/recipes/1020637-lemony-turmeric-tea-cake?action=click&module=Collection%20Page%20Recipe%20Card&region=22%20Delicious%20Reasons%20to%20Eat%20Cake%20for%20Breakfast&pgType=collection&rank=23"
+    var link24="https://cooking.nytimes.com/recipes/1017852-violet-bakery-rye-brownies?action=click&module=Collection%20Page%20Recipe%20Card&region=Let%20Them%20Eat%20Brownies&pgType=collection&rank=12"
+    var link25="https://cooking.nytimes.com/recipes/1019650-apple-pear-galette-with-apple-cider-caramel?action=click&module=Collection%20Page%20Recipe%20Card&region=30%20Desserts%20for%20Apple%20Season&pgType=collection&rank=9"
+    var link26="https://cooking.nytimes.com/recipes/1020133-strawberry-marsala-cake?action=click&module=Global%20Search%20Recipe%20Card&pgType=search&rank=31"
+    var link27="https://cooking.nytimes.com/recipes/1020391-old-fashioned-strawberry-cake?action=click&module=Global%20Search%20Recipe%20Card&pgType=search&rank=34"
+    var link28="https://cooking.nytimes.com/recipes/4073-blackberry-cake?action=click&module=Collection%20Page%20Recipe%20Card&region=Blackberries%20Are%20in%20Season%2C%206%20Recipes&pgType=collection&rank=6"
+    var link29="https://cooking.nytimes.com/recipes/3513-poundcake-filled-with-fresh-raspberries?action=click&module=Global%20Search%20Recipe%20Card&pgType=search&rank=14"
+    var link30="https://cooking.nytimes.com/recipes/1019476-blueberry-pie-bars?action=click&module=Global%20Search%20Recipe%20Card&pgType=search&rank=17"
+    var link31="https://cooking.nytimes.com/recipes/1019984-classic-chocolate-eclairs?action=click&module=Recirculation%20Band%20Recipe%20Card&region=More%20recipes%20from%20Samantha%20Seneviratne&pgType=recipedetails&rank=4"
+    if (myrandom==0)
+        window.location=link1
+    else if (myrandom==1)
+        window.location=link2
+    else if (myrandom==2)
+        window.location=link3
+    else if (myrandom==3)
+        window.location=link4
+    else if (myrandom==4)
+        window.location=link5
+    else if (myrandom==5)
+        window.location=link6
+    else if (myrandom==6)
+        window.location=link7
+    else if (myrandom==7)
+        window.location=link8
+    else if (myrandom==8)
+        window.location=link9
+    else if (myrandom==9)
+        window.location=link10
+    else if (myrandom==10)
+        window.location=link11
+    else if (myrandom==11)
+        window.location=link12
+    else if (myrandom==12)
+        window.location=link13
+    else if (myrandom==13)
+        window.location=link14
+    else if (myrandom==14)
+        window.location=link15
+    else if (myrandom==15)
+        window.location=link16
+    else if (myrandom==16)
+        window.location=link17
+    else if (myrandom==17)
+        window.location=link18
+    else if (myrandom==18)
+        window.location=link19
+    else if (myrandom==19)
+        window.location=link20
+    else if (myrandom==20)
+        window.location=link21
+    else if (myrandom==21)
+        window.location=link22
+    else if (myrandom==22)
+        window.location=link23
+    else if (myrandom==23)
+        window.location=link24
+    else if (myrandom==24)
+        window.location=link25
+    else if (myrandom==25)
+        window.location=link26
+    else if (myrandom==26)
+        window.location=link27
+    else if (myrandom==27)
+        window.location=link28
+    else if (myrandom==28)
+        window.location=link29
+    else if (myrandom==29)
+        window.location=link30
+    else if (myrandom==30)
+        window.location=link31
+}
+</script>
+<form>
+<input type="button" value="random link!" onClick="random_30()">
+</form>
+ </body>
+
+</html>   
